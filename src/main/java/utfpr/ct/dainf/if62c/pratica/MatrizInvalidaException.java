@@ -8,22 +8,22 @@ package utfpr.ct.dainf.if62c.pratica;
  * Exceção lançada quando uma matriz tem dimensões inválidas.
  */
 public class MatrizInvalidaException extends Exception {
-    private final int linhas;
-    private final int colunas;
+    private final int numLinhas;
+    private final int numColunas;
 
     public MatrizInvalidaException(int linhas, int colunas) {
         super(String.format("Matriz de %dx%d não pode ser criada.",
                 linhas, colunas));
-        this.linhas = linhas;
-        this.colunas = colunas;
+        this.numLinhas = linhas;
+        this.numColunas = colunas;
     }
 
-    public int getLinhas() {
-        return linhas;
+    public int getNumLinhas() {
+        return numLinhas;
     }
 
-    public int getColunas() {
-        return colunas;
+    public int getNumColunas() {
+        return numColunas;
     }
     
 }
